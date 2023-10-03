@@ -26,3 +26,21 @@ sortedList.Add(new Animal { Name = "Deamon" }, "Sharpei");
 # The linked list
 
 -Generic collection
+
+
+```cs
+var list = new LinkedList<Animal>();
+var reglisse = new Animal { Name = "Reglisse" };
+var reglisseNode = list.AddLast(reglisse);
+
+var pluton = new Animal { Name = "Pluton" };
+var plutonNode = list.AddFirst(pluton);
+
+var hugo = new Animal { Name = "Hugo" };
+var hugoNode = new LinkedListNode<Animal>(hugo);
+list.AddAfter(plutonNode, hugoNode);
+
+var node = list.First;
+var NextNode = node?.Next;
+```
+
